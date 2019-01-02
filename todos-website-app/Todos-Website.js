@@ -45,12 +45,6 @@ const renderTodos = function (todos, filters) {
 
 renderTodos(todos, filters)
 
-document.querySelector('#add-todo').addEventListener("click", function (e) {
-e.textContent = "New todo"})
-
-document.querySelector('#Add-todo').addEventListener("input", function (e) {
-	console.log(e.target.value);
-})
 document.querySelector('#search-Text').addEventListener("input", function (e) {
 	filters.searchText = e.target.value
 	renderTodos(todos, filters)
